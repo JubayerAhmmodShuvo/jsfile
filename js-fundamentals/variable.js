@@ -7,4 +7,4 @@ var userName = "John";
 
 //Boolean
 
-var ispassed = true;
+var ispassed = true; 
