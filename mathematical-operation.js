@@ -26,3 +26,7 @@ var firstName = "John";
 var lastName = "Smith";
 var fullName = firstName + " " + lastName;
 console.log(fullName);
+
+var num1 = “99.5”;
+var num2 = 15;
+console.log(num1 + num2);
