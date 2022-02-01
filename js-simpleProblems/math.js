@@ -15,3 +15,8 @@ console.log(output3);
 const output = Math.random() * 10;
 const roundedOutput = Math.round(output)
 console.log(roundedOutput);
+var a = 2;
+var b = 3;
+if (a >= b) {
+    console.log('Hello');
+}
