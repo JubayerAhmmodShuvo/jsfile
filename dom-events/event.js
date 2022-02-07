@@ -30,3 +30,9 @@ goldenButton.addEventListener('click', makegolden);
 function makegolden() {document.body.style.backgroundColor = 'gold';}
 
 */
+
+//another version of adding addEventListener using function direct shortcut
+
+document.getElementById('lightblue').addEventListener('click', function() {
+    document.body.style.backgroundColor = 'lightblue';
+});
