@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>More Events</h2>
+    <section>
+
+        <h3 id="secret">
+            Very very Important Secret Information
+        </h3>
+        <input type="text" id="input">
+        <button id="delete-button">Delete</button>
+    </section>
+    <script>
+        document.getElementById('delete-button').addEventListener('click', function() {
+            document.getElementById('secret').style.display = 'none';
+
+        });
+        document.getElementById('input').addEventListener('focus', function() {
+            document.body.style.backgroundColor = 'yellow';
+        });
+        //blur
+        document.getElementById('input').addEventListener('blur', function() {
+            document.body.style.backgroundColor = 'white';
+        });
+        //keydown
+        /*    document.getElementById('input').addEventListener('keydown', function() {
+              const deleteField= document.getElementById('input');
+              console.log(deleteField.value);
+           }); */
+        //keypress
+        /*    document.getElementById('input').addEventListener('keypress', function() {
+            const deleteField= document.getElementById('input');
+            console.log(deleteField.value);
+         }); */
+        //keyup
+        document.getElementById('input').addEventListener('keyup', function(event) {
+            const deleteBtn = document.getElementById('delete-button');
+
+            if (event.target.value == 'delete') {
+                deleteBtn.removeAttribute('disabled');
+            } else {
+                deleteBtn.setAttribute('disabled', true);
+            }
+
+
+        });
+        //keyup
+        /*    document.getElementById('input').addEventListener('change', function() {
+            const deleteField= document.getElementById('input');
+            console.log(deleteField.value);
+         }); */
+    </script>
+</body>
+
+</html>
